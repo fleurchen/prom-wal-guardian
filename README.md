@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Prometheus WAL Guardian
 
 ✨ A safe and pluggable WAL pre-check & cleaning utility for Prometheus. Prevent OOM crashes caused by oversized WAL segments.
