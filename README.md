@@ -1,25 +1,4 @@
-# Project: prom-wal-guardian
 
-## 📂 Repository Structure
-
-```
-prom-wal-guardian/
-├── README.md
-├── wal_guardian/
-│   ├── __init__.py
-│   ├── config.py            # 配置加载（阈值、策略）
-│   ├── wal_checker.py       # 主逻辑：检测 WAL 目录体积、segment 分析
-│   ├── wal_truncator.py     # 安全截断/清理 WAL segment 的逻辑
-│   └── utils.py             # 通用函数（如目录体积计算）
-├── scripts/
-│   └── prestart_hook.sh     # 示例启动前清理脚本（集成到 systemd/k8s init）
-├── tests/
-│   └── test_core.py         # 单元测试样例
-├── .gitignore
-└── pyproject.toml           # Poetry 项目管理
-```
-
-## 📖 README.md 内容
 
 ```markdown
 # Prometheus WAL Guardian
